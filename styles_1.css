@@ -14,7 +14,7 @@ body{
 
 .header { /* Верхняя часть с заголовком */
     height: 120px;
-    background-color: rgba(255, 204, 204, 0.4); /* Цвет фона и значение прозрачности */
+    background-color: rgba(255, 204, 204, 0.45); /* Цвет фона и значение прозрачности */
     filter: alpha(Opacity=90); /* Прозрачность в IE */
     border:hidden 2px #000000;
     -moz-border-radius: 19px;
