@@ -64,7 +64,7 @@ body{
     font-family: 'Quintessential', cursive;
     font-size: 20px; /* Размер шрифта */
     color: #000000;
-    background-color: rgba(255, 204, 204, 0.25); /* Цвет фона и значение прозрачности */
+    background-color: rgba(255, 204, 204, 0.4); /* Цвет фона и значение прозрачности */
 
     filter: alpha(Opacity=90); /* Прозрачность в IE */
     border:hidden 2px #000000;
@@ -129,7 +129,7 @@ body{
     height: 170px;
     margin:0 0 0 0;
     width: 100%;
-    background-color: rgba(255, 204, 204, 0.3); /* Цвет фона и значение прозрачности */
+    background-color: rgba(255, 204, 204, 0.4); /* Цвет фона и значение прозрачности */
     filter: alpha(Opacity=90); /* Прозрачность в IE */
     font-family: 'Quintessential', cursive;
     font-size: 20px; /* Размер шрифта */

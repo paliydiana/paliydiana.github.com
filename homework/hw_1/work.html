@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<link rel="stylesheet" type="text/css" href="fonts/PT-Sans/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="fonts/PT-Serif/stylesheet.css">
+	<script type="text/javascript">
+	function showStuff(id) {
+		document.getElementById(id).style.display = 'block';
+	}
+	function hideStuff(id) {
+		document.getElementById(id).style.display = 'none';
+	}
+	function reName(id) {
+		document.getElementById(id).className = 'blur_cont';
+	}
+	function reNameBack(id) {
+		document.getElementById(id).className = 'cont1';
+	}
+	</script>
+</head>
+<body>
+	<div class="blur" id="bg_blur">
+	</div>
+	<div id="cont" class="cont1">
+	<header>
+		<p>LOREM IPSUM NEWS</p>
+		<a href="#" class="overlay" onclick="showStuff('overlayId');showStuff('bg_blur');reName('cont');return false;">Войти</a>
+		<div>
+			<div class="headerNews">
+				<h1>Новости</h1>
+			</div>
+			<ul class="three">
+				<li class="in">скандалы</li>
+				<li class="in">&#8226;интриги</li>
+				<li class="in">&#8226;расследования</li>
+			</ul>
+		</div>
+	</header>
+	<div class="content">
+		<div class="bl1">
+			<div class="img">
+				<p>Скандал</p>
+				<img class="pic1" src="images\pics_03.jpg" alt="Скандал">
+				<img class="lit1" src="images\little_03.jpg" alt="">
+			</div>
+			<div class="text">
+				<a href="#" >Страны евросоюза могут ввести санкции против Google</a>
+				<p>Европейские власти обеспокоены политикой конфиденциальности компании Google. Google хранит личные данные пользователей в одном профиле, в котором может объединяться инфор<wbr>&shy; мация с нескольких десятков разных сайтов.
+				</p>
+			</div>
+		</div>
+		<div class="bl2">
+			<div class="img">
+				<p >Интрига</p>
+				<img class="pic1" src="images\pics_06.jpg" alt="Интрига">
+				<img class="lit2" src="images\little_06.jpg" alt="">
+			</div>
+			<div class="text">
+				<a href="#">ФАС уличила ВГТРК в рекламе алкоголя при трансляции футбольного матча</a>
+				<p>Проверка фотографий и видео-записей показала, что на рекламных стендах стадиона "Стэм<wbr>&shy; форд Бридж" во время указанного матча не были размещены рекламные плакаты данных про<wbr>&shy; изводителей алкогольной продукции. Рассмотрение данного дела ФАС России назначил на 15 мая 2013 года.
+				</p>
+			</div>
+		</div>
+		<div class="bl3">
+			<div class="img">
+				<p >Расследование</p>
+				<img class="pic1" src="images\pics_08.jpg" alt="Расследование">
+				<img class="lit3" src="images\little_09.jpg" alt="">
+			</div>
+			<div class="text">
+				<a href="#">Возобновление борьбы за домены в зоне .рф маловероятно, считают юристы</a>
+				<p>"По всем 70914 доменным именам поступили заявки от клиентов, желающих их приобрести в указанном порядке", - говорится в тексте судебного решения от 16 ноября 2011 г. Апелляцион<wbr>&shy; ная инстанция частично удовлетворила иск ФАС, а кассационная передала дело на рассмотре<wbr>&shy; ние в президиум ВАС.
+				</p>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="foo">
+			<hr class="line">
+			<p>&copy; ЗАО «Лорем ипсум ньюс»</p>
+		</div>
+	</footer>
+	</div>
+		<div class="login" id="overlayId">
+			<div class="fields">      
+			    <input class="inp1" type="text" placeholder="Логин"/>            
+			 	<input class="inp2" type="text" placeholder="Пароль" />     
+			</div>
+			<div class="buttons">
+			 <input class="btn" type="button" value="Войти" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onclick="hideStuff('overlayId');hideStuff('bg_blur');reNameBack('cont');return false;">Отмена</a>
+			</div>
+		</div>
+</body>
+</html>
