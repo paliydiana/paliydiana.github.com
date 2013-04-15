@@ -192,6 +192,7 @@ section p{
 }
 .bl1 {
 	height: 125px;
+	margin-bottom:55px ;
 }
 .im{
 	float: left;
@@ -231,6 +232,10 @@ section p{
 	padding: 0;
 	word-wrap: break-word;
 }
+.text h2{
+	padding: 0;
+	margin: 0;
+}
 .text a {
 	font:18px PTSansRegular;
 	text-align: center;
@@ -241,6 +246,7 @@ section p{
 }
 .bl2 {
 height: 125px;	
+margin-bottom:55px ;
 }
 .lit2 {
 	position: absolute;
