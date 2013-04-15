@@ -32,7 +32,7 @@ header a{
 }
 .top_nav{
 	font: 14px PTSansRegular;
-	margin-left:37%;
+	margin-left:670px;
 	margin-top: 10px;
 	position:absolute;
 }
@@ -139,10 +139,10 @@ aside p{
 	color:#b7b7b7;
 }
 article{
-	margin-top:100px;
-	margin-bottom:100px;
+	margin:-350px 0 100px 100px;
 	width:600px;
 	float:right;
+	position: relative;
 }
 .new h2{
 	font:24px PTSerifBold;
@@ -155,8 +155,9 @@ section{
 	width:800px;
 	height: 255px;
 	border-top: 2px solid #989898;
-	margin: 100px 207px 0 192px;
-	display: inline;
+	margin: 210px 207px 0 0;
+	clear:both;
+	padding-top:30px ;
 }
 section p{
 	width:120px;
