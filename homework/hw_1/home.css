@@ -36,6 +36,16 @@ header a{
 	margin-top: 10px;
 	position:absolute;
 }
+.top_nav a:active{
+	color:black;
+	font-weight: bold;
+	text-decoration:none;
+}
+.act:visited{
+	color:black;
+	font-weight: bold;
+	text-decoration:none;
+}
 .user_dropdown:hover{
 	width: 115px;
 	height: 115px;
