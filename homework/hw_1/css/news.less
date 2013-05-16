@@ -1,0 +1,127 @@
+.left_top{
+	margin: 0 0 0 10px ;
+}
+.top_nav{
+	.font_r(14px);
+	margin: 0 0 0 33%;
+	display: inline-block;
+	a{
+		padding: 5px;
+	}
+}
+
+.user_dropdown{
+	float:right;
+	width: 115px;
+	height: 20px;
+	margin: 10px 10px 0 0;
+	box-shadow: 1px 1px 1px #989898;
+	-webkit-border-radius: 10px;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f2f2f2 38%, #dddddd 84%, #d9d9d9 99%, #bebebe 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(38%,#f2f2f2), color-stop(84%,#dddddd), color-stop(99%,#d9d9d9), color-stop(100%,#bebebe)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f2f2f2 38%,#dddddd 84%,#d9d9d9 99%,#bebebe 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#f2f2f2 38%,#dddddd 84%,#d9d9d9 99%,#bebebe 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#f2f2f2 38%,#dddddd 84%,#d9d9d9 99%,#bebebe 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#f2f2f2 38%,#dddddd 84%,#d9d9d9 99%,#bebebe 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bebebe',GradientType=0 ); /* IE6-9 */
+	&:hover{
+		display: block;
+		height: auto;
+		z-index: 0;
+		div {
+			display: block;
+		}
+	}
+	.nav {
+	display: none;
+	}
+	div ul{
+	list-style: none;
+	margin: 15px 0 0 0;
+	float:left;
+	li{
+		margin:7px 0 0 -18px;
+		a{
+			.font_r(14px);
+			text-shadow: 1px 1px 1px #fff;
+			color: @grey;
+			text-decoration: underline;
+		}
+	}
+}
+}
+.dropdown_text{
+	position: absolute ;
+	margin:0 0 0 24px;
+	.font_r(14px);
+	text-shadow: 1px 1px 1px #fff;
+	color: @grey;
+}
+.arrow{
+	display: block;
+  	width:0px;
+	height:0px;
+	border-left:5px solid transparent;  /* левый наклон стрелки */
+	border-right:5px solid transparent; /* правый наклон стрелки */
+	border-top:5px solid @grey; /* низ, указываем цвет стрелки */
+	margin:5px 0 0 8px ; /* центрируем стрелку в родительском контейнере */
+}
+.content{
+	margin-top:140px;
+}
+.as_art{
+	margin-bottom:100px;
+}
+aside{
+	float: left;
+	width:21%;
+	font: 10px Verdana;
+	color:#b7b7b7;
+	margin:114px 0 0 0;
+}
+.new{
+	float: right;
+	width: 75%;
+	h2{
+		margin: 0 0 50px 0;
+		font:24px PTSerifBold;
+	}
+	a{
+		color:#003366;
+	}
+}
+section{
+	border-top: 2px solid #989898;
+	p{
+		width:120px;
+		float:left;
+		.font_b(14px);
+		
+	}
+	.other_news{
+		width: 75%;
+		margin:20px 0 0 0;
+		display:block;
+		float: right;
+	}
+	.one{
+		display: inline-block;
+		width: 30%;
+		margin: 0 10px 20px 0;
+		padding: 0 5px 0 0;
+		h3{
+			.font_r(14px);
+			padding: 0;
+			margin: 0;
+			a{
+				color:#003366;
+			}
+		}
+		p{
+			.font_r(12px);
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
