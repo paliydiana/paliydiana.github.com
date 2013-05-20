@@ -1,18 +1,9 @@
-// .left_top{
-// 	margin: 0 0 0 10px ;
-// }
-@grey: #666;
-
-.font_r(@f_r){
-	font: @f_r PTSansregular;
+.left_top{
+	margin: 0 0 0 10px ;
 }
-.font_b(@f_b){
-	font: @f_b PTSansBold;
-}
-
 .top_nav{
 	.font_r(14px);
-	margin: 0 0 0 40% ;
+	margin: 0 auto;
 	display: inline-block;
 	a{
 		padding: 5px;
@@ -71,14 +62,14 @@
 	display: block;
   	width:0px;
 	height:0px;
-	border-left:5px solid transparent;  
-	border-right:5px solid transparent;
+	border-left:5px solid transparent;  /* левый наклон стрелки */
+	border-right:5px solid transparent; /* правый наклон стрелки */
 	border-top:5px solid @grey; /* низ, указываем цвет стрелки */
 	margin:5px 0 0 8px ; /* центрируем стрелку в родительском контейнере */
 }
-// .content{
-// 	margin-top:140px;
-// }
+.content{
+	margin-top:140px;
+}
 .as_art{
 	margin-bottom:100px;
 }

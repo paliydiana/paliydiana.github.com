@@ -1,20 +1,32 @@
 body{
 	margin: 0;	
-	background: url("images/bg2.jpg") repeat;
+	background: url("hw_1/images/bg2.jpg") repeat;
 	position: relative;
+	min-width: 0.6666%;
+}
+@media screen and (max-width:640px){
+	body{
+		min-width:640px;
+	}
 }
 header{
 	padding: 0;
-	margin: 5px 0 0 0;
+	margin: 0 auto;
 	h1{
 		text-align: center;
-		font: 72px PTSerifBold;	
+		font: 4.5em PTSerifBold;	
 		margin: auto;
 		width: 100%;
 		display: inline-block;
 	}
 }
-
+@media screen and (max-width:640px){
+	header{
+		h1{
+			margin: 0.97222em 0 0 0;
+		}
+	}
+}
 @grey: #666;
 
 .font_b(@f_b){
@@ -31,39 +43,66 @@ header{
 	position: absolute;
 	display: inline-block;
 	font-variant: small-caps;
-	margin: 0 0 0 10px;
-	.font_b(24px);
+	margin: 0 0 0 20px;
+	.font_b(1.5em);
+}
+@media screen and (max-width:640px){
+	.left_top{
+	margin: 0.625em 0 0 1.666em;
+	}
 }
 .overlay{
 	display: inline-block;
 	float: right;
-	margin: 0 10px 0 0;
+	margin: 0 20px 0 0;
 	color: @grey;
 	border-bottom: 1px dashed; 
 	text-decoration: none;
-	.font_r(14px);
+	.font_r(0.875em);
+}
+@media screen and (max-width:640px){
+	.overlay{
+		margin: 1.07em 2.857em 0 0;
+	}
 }
 .under_news{
 	padding: 0;
 	margin: 0 0 125px 0;
 	text-align: center;
-	.font_r(18px);
+	.font_r(1.125em);
 	li{
 		display: inline-block;
 		}
 }
+@media screen and (max-width:640px){
+	.under_news{
+		margin: 0 0 4.444em 0;
+	}
+}
 .content{
 	width: 800px;
-	max-width: 80%;
 	margin: 0 auto;
+}
+@media screen and (max-width:640px){
+	.content{
+		width: 87.5%;
+	}
 }
 .block{
 	display: inline-block;
 	margin: 0;
 	padding: 0;
+	list-style-type: none;
 	li{
 		width: 800px;
 		margin-bottom:55px;
+	}
+}
+@media screen and (max-width:640px){
+	.block{
+		li{
+			width: 100%;
+		}
 	}
 }
 .news{
@@ -88,7 +127,13 @@ header{
 	position: absolute;
 	text-align: center;
 	color: #fff;
-	.font_i(18px);
+	.font_i(1.125em);
+}
+@media screen and (max-width:640px){
+	.rect{
+		.font_i(0.875em);
+		margin: -1em 0 0 9.375em;
+	}
 }
 .pic{
 	float: left;
@@ -97,11 +142,11 @@ header{
 }
 .text{
 	float: right;
-	width: 75%;
+	width: 74%;
 	padding: 0;
 	word-wrap: break-word;
 	h3{
-		.font_r(18px);
+		.font_r(1.125em);
 		text-align: left;
 		color: black;
 		padding: 0;
@@ -111,6 +156,16 @@ header{
 		.font_r(14px);
 	}
 }
+@media screen and (max-width:640px){
+	.text{
+		h3{
+			margin:20px 150px 0 20px;
+		}
+		p{
+			margin: 60px 0 0 -180px;
+		}
+	}
+}
 .clearfix{
 	clear:both;
 }
@@ -118,8 +173,13 @@ header{
 	margin:80px auto;
 	width: 800px;
 	border-top: solid 1px #989898;
-	.font_r(12px);
+	.font_r(0.75em);
 }
+// @media screen and (max-width:640px){
+// 	.foo{
+// 		width: 87.5%;
+// 	}
+// }
 .login{
 	display: none;
 	background-color: white;
