@@ -4,11 +4,6 @@ body{
 	position: relative;
 	min-width: 0.6666%;
 }
-@media screen and (max-width:640px){
-	body{
-		min-width:640px;
-	}
-}
 header{
 	padding: 0;
 	margin: 0 auto;
@@ -18,13 +13,6 @@ header{
 		margin: auto;
 		width: 100%;
 		display: inline-block;
-	}
-}
-@media screen and (max-width:640px){
-	header{
-		h1{
-			margin: 0.97222em 0 0 0;
-		}
 	}
 }
 @grey: #666;
@@ -46,11 +34,6 @@ header{
 	margin: 0 0 0 20px;
 	.font_b(1.5em);
 }
-@media screen and (max-width:640px){
-	.left_top{
-	margin: 0.625em 0 0 1.666em;
-	}
-}
 .overlay{
 	display: inline-block;
 	float: right;
@@ -59,11 +42,6 @@ header{
 	border-bottom: 1px dashed; 
 	text-decoration: none;
 	.font_r(0.875em);
-}
-@media screen and (max-width:640px){
-	.overlay{
-		margin: 1.07em 2.857em 0 0;
-	}
 }
 .under_news{
 	padding: 0;
@@ -74,19 +52,9 @@ header{
 		display: inline-block;
 		}
 }
-@media screen and (max-width:640px){
-	.under_news{
-		margin: 0 0 4.444em 0;
-	}
-}
 .content{
 	width: 800px;
 	margin: 0 auto;
-}
-@media screen and (max-width:640px){
-	.content{
-		width: 87.5%;
-	}
 }
 .block{
 	display: inline-block;
@@ -96,13 +64,6 @@ header{
 	li{
 		width: 800px;
 		margin-bottom:55px;
-	}
-}
-@media screen and (max-width:640px){
-	.block{
-		li{
-			width: 100%;
-		}
 	}
 }
 .news{
@@ -129,12 +90,6 @@ header{
 	color: #fff;
 	.font_i(1.125em);
 }
-@media screen and (max-width:640px){
-	.rect{
-		.font_i(0.875em);
-		margin: -1em 0 0 9.375em;
-	}
-}
 .pic{
 	float: left;
 	height: auto;
@@ -154,16 +109,6 @@ header{
 	}
 	p {
 		.font_r(14px);
-	}
-}
-@media screen and (max-width:640px){
-	.text{
-		h3{
-			margin:20px 150px 0 20px;
-		}
-		p{
-			margin: 60px 0 0 -180px;
-		}
 	}
 }
 .clearfix{
@@ -228,4 +173,43 @@ header{
 .btn {
 	width:67px;
 	height:26px;
+}
+@media screen and (max-width:640px){
+	body{
+		min-width:640px;
+	}
+	header{
+		h1{
+			margin: 0.97222em 0 0 0;
+		}
+	}
+	.left_top{
+	margin: 0.625em 0 0 1.666em;
+	}
+	.overlay{
+		margin: 1.07em 2.857em 0 0;
+	}
+	.under_news{
+		margin: 0 0 4.444em 0;
+	}
+	.content{
+		width: 87.5%;
+	}
+	.block{
+		li{
+			width: 100%;
+		}
+	}
+	.rect{
+		.font_i(0.875em);
+		margin: -1em 0 0 9.375em;
+	}
+	.text{
+		h3{
+			margin:20px 150px 0 20px;
+		}
+		p{
+			margin: 60px 0 0 -180px;
+		}
+	}
 }
