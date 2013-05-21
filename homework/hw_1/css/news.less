@@ -21,6 +21,7 @@
 
 .user_dropdown{
 	float:right;
+	padding: 2px 2px;
 	width: 115px;
 	height: 20px;
 	margin: 10px 10px 0 0;
@@ -134,4 +135,43 @@ section{
 			padding: 0;
 		}
 	}
+}
+@media screen and (max-width:640px){
+	body{
+		min-width:640px;
+	}
+	.left_top{
+	margin: 15px 0 0 40px;
+	}
+	.user_dropdown{
+		margin: 15px 50px 0 0;
+	}
+	.top_nav{
+		margin: 4.375em 0 100px 40px;
+		// position: absolute;
+	}
+	.content{
+		width: 87.5%;
+	}
+	.new{
+	width: 100%;
+	}
+	aside{
+		display: none;
+	}
+	section{
+		border-top: 2px solid #989898;
+		min-width: 87.5%;
+		.other_news{
+			width: 100%;
+		}
+	}
+	.one{
+		.im{
+			width: 100%;
+		}
+	}
+	.foo{
+	width: 87.5%;
+}
 }
