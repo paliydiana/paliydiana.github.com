@@ -6,15 +6,15 @@
 	<link rel="stylesheet" type="text/css" href="css/all.css">
 	<link rel="stylesheet" type="text/css" href="fonts/PT-Sans/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="fonts/PT-Serif/stylesheet.css">
+	<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
 	<script src="js/hide.js" type="text/javascript"></script>
-
 </head>
 <body>
 	<div class="blur" id="bg_blur"></div>
 	<div id="cont" class="cont1">
 		<header>
 			<h2 class="left_top">LOREM IPSUM NEWS</h2>
-			<a href="#" class="overlay" onclick="showStuff('overlayId');showStuff('bg_blur');reName('cont');return false;">Войти</a>
+			<a href="#" class="overlay" id="enter">Войти</a>
 			<h1>Новости</h1>
 			<ul class="under_news">
 				<li>скандалы</li>
@@ -78,7 +78,7 @@
 			 	<input class="inp2" type="password" placeholder="Пароль" />     
 			</div>
 			<div class="buttons">
-			 <input class="btn" type="button" value="Войти" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onclick="hideStuff('overlayId');hideStuff('bg_blur');reNameBack('cont');return false;">Отмена</a>
+			 <input class="btn" type="button" value="Войти" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" id="close" >Отмена</a>
 			</div>
 		</form>
 </body>
