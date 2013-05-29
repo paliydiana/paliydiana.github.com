@@ -6,6 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="css/all.css">
 	<link rel="stylesheet" type="text/css" href="fonts/PT-Sans/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="fonts/PT-Serif/stylesheet.css">
+	<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/comments.js"></script>
 </head>
 <body>
 	<header>
@@ -49,6 +51,51 @@
 			</article>
 			<div class="clearfix"></div>
 		</div>
+		<div class="comments">
+			<h3>Комментарии(10)</h3>
+			<div id="addComment" class="addComment">
+				<form action="#" method="POST" enctype="multipart/form-data" name="form" id="form_com" class="form_com" onSubmit="return false">
+					<input type="text" name="author" class="author inset" id="author" placeholder="Представьтесь, пожалуйста">
+					<textarea name="text" id="text" class="text inset" placeholder="Введите текст сообщения..."></textarea>
+					<input class="add" id="add_com" name="add_com" type="submit" value="Добавить комментарий">
+					<div id="error"></div>
+					<div class="clearfix"></div>
+				</form>
+			</div>
+			<div id="one_comment" class="one_comment line">
+				<div class="top">
+					<h4>Константин Константинопольский</h4>
+					<p>0:44, четверг, 24.05.2013</p>
+				</div>
+				<p class="inform">Шило на&nbsp;мыло меняют- клан меняют свою шкуру и&nbsp;все- Патриарх Никон.: &laquo;Ибо совершивший грех есть раб греха , хотя&nbsp;бы имел тысячи корон на&nbsp;свей голове, но&nbsp;кто поступает праведно, тот больше самого царя, хотя&nbsp;бы он&nbsp;был последний из&nbsp;всех&raquo;.</p>
+				<a class="answer" >Ответить</a>
+			</div>
+			<div id="one_comment" class="one_comment line">
+				<div class="top">
+					<h4>Leonid Ivashentsev</h4>
+					<p>22:53, четверг, 23.05.2013</p>
+				</div>
+				<p class="inform">это&nbsp;же сплошное мимимими</p>
+				<a class="answer" >Ответить</a>
+			</div>
+			<div id="one_comment" class="one_comment line inside">
+				<div class="top">
+					<h4>Серега</h4>
+					<p>22:33, четверг, 23.05.2013</p>
+				</div>
+				<p class="inform">хороший человек.<br>а&nbsp;откуда он&nbsp;тырил пиво&nbsp;то?</p>
+				<a class="answer" >Ответить</a>
+			</div>
+			<div id="one_comment" class="one_comment">
+				<div class="top">
+					<h4>Иван Васильев</h4>
+					<p>21:37, четверг, 23.05.2013</p>
+				</div>
+				<p class="inform">&gt; хотели&nbsp;бы пригласить его в&nbsp;гости, чтобы пообщаться и&nbsp;обнять его.<br>Слишком толсто.</p>
+				<a class="answer" >Ответить</a>
+			</div>
+		</div>
+		<div class="clearfix"></div>
 		<section>
 			<p>Другие материалы рубрики</p>
 			<ul class="other_news">

@@ -95,6 +95,95 @@ aside{
 		color:#003366;
 	}
 }
+.comments{
+	h3{
+	.font_r(18px);
+	}
+	width: 81.25%;
+	float: right;
+	margin: 0 10px 40px 0;
+}
+.addComment1{
+	// display: none;
+}
+.form_com{
+	.font_r(12px);
+	color: #858585;
+	.author{
+		width: 37%;
+		height: 1.56em;
+		margin: 15px 0 15px 0;
+		display: block;
+	}
+	.text{
+		width: 100%;
+		min-height: 3.4375em;
+		height: auto;
+		margin: 0 0 20px 0;
+		display: block;
+			-webkit-transition: all 0.15s ease-in-out;
+			-moz-transition: all 0.15s ease-in-out;
+			-ms-transition: all 0.15s ease-in-out;
+			-o-transition: all 0.15s ease-in-out;
+			transition: all 0.15s ease-in-out;
+		&:focus{
+			height: 5em;
+		}
+	}
+	.inset{
+		border: 1px inset #d6d6d6;
+	}
+	.add{
+		.font_r(12px);
+		padding: 4px 4px;
+		cursor: pointer;
+		-webkit-border-radius: 3px;
+		background: #ffffff; /* Old browsers */
+		background: -moz-linear-gradient(top,  #ffffff 0%, #f2f2f2 38%, #dddddd 84%, #d9d9d9 99%, #bebebe 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(38%,#f2f2f2), color-stop(84%,#dddddd), color-stop(99%,#d9d9d9), color-stop(100%,#bebebe)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #ffffff 0%,#f2f2f2 38%,#dddddd 84%,#d9d9d9 99%,#bebebe 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #ffffff 0%,#f2f2f2 38%,#dddddd 84%,#d9d9d9 99%,#bebebe 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #ffffff 0%,#f2f2f2 38%,#dddddd 84%,#d9d9d9 99%,#bebebe 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #ffffff 0%,#f2f2f2 38%,#dddddd 84%,#d9d9d9 99%,#bebebe 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bebebe',GradientType=0 ); /* IE6-9 */
+		float: right;
+		margin: 0 0 10px 0;
+		display: block;
+	}
+}
+#error{
+	.font_r(15px);
+	color: red;
+}
+.one_comment{
+	margin: 20px 0 0 0;
+	padding-bottom: 20px;
+	.top{
+		h4{
+			.font_b(12px);
+			display: inline;
+		}
+		p{
+			.font_r(12px);
+			color: a3a3a3;
+			display: inline;
+		}
+	}
+	.inform{
+		.font_r(12px);
+		color: #333333;
+	}
+	a{
+		.font_r(12px);
+		color: #003366;
+	}
+}
+.inside{
+	margin-left: 40px;
+}
+.line{
+	border-bottom: solid 1px #989898;
+}
 section{
 	border-top: 2px solid #989898;
 	min-width: 800px;
@@ -166,5 +255,9 @@ section{
 	}
 	.foo{
 	width: 87.5%;
-}
+	}
+	.comments{
+		margin: 0 auto ;
+		width: 100%;
+	}
 }
