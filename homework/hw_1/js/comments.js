@@ -1,20 +1,11 @@
-$(document).ready(function(){
-        $('.answer').click(function() {
-            $('.addComment').each(function(){
-                if(!$(this).parent().hasClass('comments')){
-                    $(this).hide();
-                }
-            });
-            $(this).parent().append($('#addComment').clone());
-             $('#addComment').submit(validate);
-            $(this).next().show();
-        });
-    });
-
 
 $(function(){
 
-        var field = new Array("author", "text");
+        
+});
+
+$(document).ready(function(){
+    var field = new Array("author", "text");
 
         var validate = (function(event){
             var error=0;        
@@ -45,4 +36,19 @@ $(function(){
                 return false; 
                 };      
             });
+
+$('#form_com').submit(validate);
+
+        $('.answer').click(function() {
+            $('.addComment').each(function(){
+                if(!$(this).parent().hasClass('comments')){
+                    $(this).hide();
+                }
+            });
+
+            var _form = $('#addComment').clone();
+            $(this).parent().append(_form);
+             $(_form).submit(validate);
+            $(this).next().show();
         });
+    });
